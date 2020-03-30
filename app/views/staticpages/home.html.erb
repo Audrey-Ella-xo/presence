@@ -1,2 +1,16 @@
-<h1>Staticpages#home</h1>
-<p>Find me in app/views/staticpages/home.html.erb</p>
+<% provide(:title, "Projects") %>
+
+<section class="about">
+<% provide(:name, "Grouped Projects") %>
+    <h1>
+        <%=image_tag("undraw_software_engineer_lvl5.png", alt: "Welcome message", class: "title-icon")%>
+        About me
+    </h1>
+
+    <div class="personal-info">
+        <h2>Hello, I am Audrey</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo quo sed aliquid nam adipisci reprehenderit commodi ipsam? Accusantium doloribus voluptate, ad deleniti quo impedit reiciendis nihil officiis minus temporibus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nesciunt illum iusto ad a cum?</p>
+    </div>
+</section>

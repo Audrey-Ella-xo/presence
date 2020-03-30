@@ -1,2 +1,48 @@
-<h1>Staticpages#works</h1>
-<p>Find me in app/views/staticpages/works.html.erb</p>
+<section class="featured-works">
+            <h1>
+                <img class="title-icon" src="./assets/images/Portfolio tinified pictures/portfolio svg/undraw_dev_focus_b9xo.svg" alt="">
+                Featured Works
+            </h1>
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <div class="project">
+                        <%=link_to image_tag("mockup-of-a-macbook-pro-on-a-coffee-shop-table-2315-el1.png", alt: "Welcome message", class: "img-responsive d-block w-100" ), "#" %>    
+
+                            <div class="detail"> 
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content</p>
+                                  <div>
+                                      <a href="#"><i class="fas fa-eye"></i></a>
+                                      <a href="#"><i class="fas fa-code"></i></a>
+                                  </div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="project">
+                    <%=link_to image_tag("mockup-of-a-macbook-pro-placed-on-a-white-work-desk-next-to-some-plant-pots-495-el.png", alt: "Welcome message", class: "img-responsive d-block w-100" ), "#" %> 
+                            <div class="detail"> 
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional content</p>
+                                  <div>
+                                      <a href="#"><i class="fas fa-eye"></i></a>
+                                      <a href="#"><i class="fas fa-code"></i></a>
+                                  </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>

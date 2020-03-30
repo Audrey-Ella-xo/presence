@@ -1,0 +1,21 @@
+<aside>
+    <div class = "intro">
+    <%=link_to image_tag("welcome_cats.svg", alt: "Welcome message"), root_path %>    
+        <p>I am a fullstack developer</p>
+    </div>
+    <div class="links">
+        <ul>
+            <li><%= link_to "Work", projects_path %></li>
+            <li><%= link_to "Articles", publication_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+        </ul>
+    </div>
+    <div class="socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-medium"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+    </div>
+</aside>

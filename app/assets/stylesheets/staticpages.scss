@@ -1,3 +1,220 @@
 // Place all the styles related to the Staticpages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$primary-color: #fff200;
+$secondary-color: #ff3838;
+$accent-color: #fffa65;
+$color-1st: #6C63FF;
+$text-primary: #3d3d3d;
+$text-secondary: #747d8c;
+$text-white: #f1f2f6;
+$bg: #f3eed3;
+
+/* universal */
+
+body {
+    background-color: #F1F3F2;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden; 
+    overflow-y: auto;
+  }
+  
+  section {
+    overflow: auto;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .center h1 {
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: -15px;
+    margin-left: 325px;
+    width: auto;
+  }
+  
+  @mixin box_sizing {
+      -moz-box-sizing:    border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing:         border-box;
+    }
+  
+  /* typography */
+  
+  h1, h2, h3, h4, h5, h6 {
+      line-height: 1;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1 {
+      font-size: 3em;
+      letter-spacing: -2px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 1.2em;
+      letter-spacing: -1px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: normal;
+      color: #434b54;
+    }
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.7em;
+    }
+
+a {
+    color: $color-1st;
+    &:hover {
+        color: $text-secondary;
+    }
+}
+
+aside {
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index:5;
+    outline:none;
+    overflow-x: hidden;
+    padding: 50px;
+    text-align: center;
+    color: $text-primary;
+    background-color: $primary-color;
+    img {
+        width: 120px;
+        height: 90px;
+    }
+    ul {
+        list-style-type: none;
+        a {
+            color: $text-primary;
+            &:hover{
+                color: $text-secondary;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+main {
+    height: 100%;
+    section {
+        h1 {
+            text-align: center;
+        }
+        .title-icon {
+            width: 150px;
+            height: 120px;
+        }
+
+        .card {
+            
+            padding: 0 50px 0 50px;
+            border: none;
+        }
+
+        a {
+            color: $color-1st;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .featured-works {
+        margin-bottom: 100px;
+    }
+    .detail {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        color: $primary-color;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        padding-top: 150px;
+        a {
+            color: $primary-color;
+          }
+    }
+    .carousel {
+        margin: 20px 200px;
+    }
+    .project {
+            position: relative;
+        overflow: hidden;
+        a img {
+          width: 100%;
+          height: 100%;
+        }
+        &:hover .detail {
+            display: block;
+        }
+    }  
+    
+    .card {
+        margin-top: 80px;
+        .full-article {
+            border-bottom: 5px solid $primary-color;
+            transition: background-color 2s;
+            width: 50%;
+            height: 100%;
+            padding: 15px 10px 10px 10px;
+            text-align: center;
+                &:hover {
+                    background-color: $primary-color;
+                }
+                a {
+                    color: #3d3d3d;
+                    text-decoration: none;
+                    transition: color 2s;
+                    &:hover {
+                        color: $color-1st;
+                    }
+                }
+        }
+    }
+
+    .about {
+        background-color: cadetblue;
+        .personal-info {
+            text-align: center;
+            margin: 40px 200px;
+            padding: 50px;
+            background-color: $accent-color;
+            // width: 100%;
+        }
+
+    }
+    
+}
+
+footer {
+    margin-left: 350px;
+    background-color: $primary-color;
+    border-top: 2px solid white;
+}
